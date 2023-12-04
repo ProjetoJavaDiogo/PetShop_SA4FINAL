@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <title>card</title>
+    <link rel="stylesheet" href="servicos.css">
 </head>
 <body>
-    <div class="main">  	
-        <input type="checkbox" id="chk" aria-hidden="true">
+  <form class="form">
+    <label class="lb" for="nome">Name:</label>
+          <input name="nome" id="nome" type="text" class="infos">
     
-            <div class="login">
-                <form class="form">
-                    <label for="chk" aria-hidden="true">Login</label>
-                    <input class="input" type="email" name="email" placeholder="Email: " required="">
-                    <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
-                    <button>Login</button>
-                </form>
-            </div>
+          <label for="email" class="lb">E-mail:</label>
+          <input name="email" id="email" type="email" class="infos">
+
+          <label for="tel" class="lb">Telefone:</label>
+          <input name="tel" id="tel" type="text" class="infos">
     
-      <div class="register">
-                <form class="form">
-                    <label for="chk" aria-hidden="true">Cadastre-se</label>
-                    <input class="input" type="text" name="txt" placeholder="Nome:" required="">
-                    <input class="input" type="email" name="email" placeholder="Email:" required="">
-                    <input class="input" type="password" name="pswd" placeholder="Senha:" required="">
-                    <button>Cadastre-se</button>
-                </form>
-            </div>
-    </div>
+          <label for="data" class="lb">Date:</label>
+          <input name="data" id="data" type="date" class="infos">
+    
+          <button id="send" type="submit">Send</button>
+          <button id="limpar" type="reset">Clear </button>
+        </form>
 </body>
+</html>
