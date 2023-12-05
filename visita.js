@@ -4,13 +4,16 @@ let telefone = document.getElementById("phone");
 let data = document.getElementById("date");
 
 function submitForm() {
-  let enviar = nome.value && email.value && telefone.value && data.value;
-
+    let enviar = nome.value || email.value || telefone.value || data.value;
+    
     if (!enviar) {
-        displayModal("Agendamento não foi realizado!");
+        displayModal("Nenhum campo preenchido. Agendamento não foi realizado!");
+    } else if (!validarNome(nome.value)) {
+        displayModal("Nome incorreto!");
+    } else if (!validarTelefone(telefone.value)) {
+        displayModal("Número de Telefone incorreto!");
     } else {
-
-        displayModal("Agendamento realizado com sucesso!" );
+        displayModal("Agendamento realizado com sucesso!");
         // Limpa os campos do formulário
         nome.value = "";
         email.value = "";
@@ -18,13 +21,25 @@ function submitForm() {
         data.value = "";
     }
 }
-function clearForm(){
+
+function validarNome(valor) {
+    // Verifica se o valor contém apenas letras
+    return /^[A-Za-z]+$/.test(valor);
+}
+
+function validarTelefone(valor) {
+    // Verifica se o valor contém apenas números
+    return /^[0-9]+$/.test(valor);
+}
+
+function clearForm() {
     // Limpa os campos do formulário
     nome.value = "";
     email.value = "";
     telefone.value = "";
     data.value = "";
 }
+
 function displayModal(message) {
     let modal = document.getElementById("customModal");
     let modalContent = document.getElementById("modalContent");
