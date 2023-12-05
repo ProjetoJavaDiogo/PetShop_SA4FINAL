@@ -9,7 +9,7 @@
 <body>
     <div class="visitor-container">
         <div class="visitor-form">
-            <h2>Agende sua Visita</h2>
+            <h2> Agende sua Visita! </h2>
             <form id="visitor-form">
                 <div class="form-group">
                     <label for="name">Nome:</label>
@@ -35,6 +35,11 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div id="customModal" class="modal">
+        <div id="modalContent" class="modal-content"></div>
+        <span id="closeModalBtn" class="modal-btn" onclick="closeModal()">Fechar</span>
+    </div>
+
+    <script src="visita.js"></script>
 </body>
 </html>
