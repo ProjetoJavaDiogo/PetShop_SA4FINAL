@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Mukta:wght@200&display=swap');
+
+.card {
+  width: 1150px; /* ou qualquer valor desejado para a largura */
+  height: 254px;
+  background: #ffffff;
+ 
+ padding-left: 8%;
+}
+
+.card .card-content {
+  margin-right: px; /* Ajuste conforme necessário para o espaçamento desejado */
+  display: flex;
+  align-items: center; /* Isso centralizará verticalmente a imagem */
+}
+
+.bd-placeholder-img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cardesquerdo{
+  width: 350px; /* ou qualquer valor desejado para a largura */
+  height: 254px;
+  padding-left: 900px;
+  background-color: #a888b9;
+}
+
+.h201{
+  display: flex;
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+}
+
+.h202{
+  margin-left: -40px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+}
+
+.h203{
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+}
+.h204{
+  margin-left: -100px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+}
+
+.h205{
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+}
+
+/* Adicione este código ao seu arquivo regras.css */
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-content img,
+.cardesquerdo .card-content img {
+  margin-left: 10px; /* Adiciona espaço à direita da imagem */
+}
+.bd-placeholder-img rounded-circle{
+  margin-left: 10px;
+}
+
+.cordaycare{
+  color: #a888b9;
+}
+/* Adicione este código ao seu arquivo CSS (regras.css) */
+
+h2, h1.cordaycare {
+  margin: 0; /* Define a margem como zero para remover o espaço */
+  margin-left: 100px;
+  
+}
+.horarios h2{
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  margin-right: 20px;
+}
+
+.horarios img{
+  display: flex;
+  margin-right: 10px;
+}
+
+
+h2{
+  font-size: 30px;
+}
+
+h1.cordaycare{
+  font-size: 45px;
+}
+.cardsss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1250px;
+  height: 254px;
+  color: #a888b9;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-size: 12px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
