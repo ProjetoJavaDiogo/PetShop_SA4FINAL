@@ -1,6 +1,8 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Arimo', sans-serif;
-  }
+}
   
   .cards {
     display: flex;
@@ -54,4 +56,74 @@ body {
     font-size: 45px;
     margin-left: 100px;
   }
-  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.fullscreen-card {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0px -3px 0px inset rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Garante que a borda arredondada se aplique corretamente */
+    background-color: #E88F4A;
+}
+
+.fullscreen-card img {
+    max-width: 30%; /* Ajusta a largura máxima da imagem para 30% */
+    height: auto;
+    border-radius: 10px 0 0 10px; /* Borda arredondada apenas no lado esquerdo da imagem */
+}
+
+.card-content {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza o título */
+}
+
+.card-content p {
+    font-size: 1.2em;
+}
+
+.custom-card2 {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0px -3px 0px inset rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Garante que a borda arredondada se aplique corretamente */
+    background-color: #83BD4C;
+}
+
+.custom-card2 img {
+    max-width: 30%; /* Ajusta a largura máxima da imagem para 30% */
+    height: auto;
+    border-radius: 0 10px 10px 0; /* Borda arredondada apenas no lado direito da imagem */
+}
+
+.card-content2 {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card-content2 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza o título */
+}
+
+.card-content2 p {
+    font-size: 1.2em;
+}
