@@ -26,11 +26,11 @@ body {
   }
   
   .cards .green {
-    background-color: #83BD4C;
+    background-color: #a888b9;
   }
   
   .cards .orange {
-    background-color: #E88F4A;
+    background-color: #E2B6C5;
   }
   
   .cards .card p.tip {
@@ -55,6 +55,11 @@ body {
     color: #a888b9;
     font-size: 45px;
     margin-left: 100px;
+  }
+  h2, h1.cordaycare {
+    margin: 0; /* Define a margem como zero para remover o espaço */
+    margin-left: 100px;
+    
   }
   body {
     margin: 0;
